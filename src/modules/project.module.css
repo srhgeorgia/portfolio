@@ -1,0 +1,30 @@
+/* about.module.css */
+.container {
+  height: 60vh;
+  padding: 4rem 4rem;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  --tw-bg-opacity: 1;
+  background-color: rgb(5, 8, 22, var(--tw-bg-opacity));
+  max-width: 80vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+.aboutMe {
+  --tw-text-opacity: 1;
+  color: rgb(170 166 195 / var(--tw-text-opacity));
+}
+
+.title {
+  white-space: nowrap;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #fff;
+  z-index: 2;
+}
+
+.subTitle {
+  --tw-text-opacity: 1;
+  color: rgb(170 166 195 / var(--tw-text-opacity));
+}
