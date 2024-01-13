@@ -1,0 +1,67 @@
+.containerHome {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("../assets/herobg.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* opacity: 0.5;  */
+  /* z-index: -1;  */
+}
+
+.contentString {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 10rem;
+  margin-bottom: 20rem;
+  /* z-index: 2; 
+    position: relative; */
+}
+
+.title {
+  white-space: nowrap;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.title > span {
+  background-image: linear-gradient(
+    45deg,
+    rgb(33, 112, 115),
+    #2C1F57,
+    rgb(255, 255, 255)
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientAnimation 7s linear infinite;;
+}
+
+.subTitle{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.gif {
+  width: 60rem;
+}
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

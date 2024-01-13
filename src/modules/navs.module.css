@@ -1,0 +1,44 @@
+.containerNavs {
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #fff;
+  margin: 0 auto; 
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  top: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(5, 8, 22, var(--tw-bg-opacity));
+}
+
+.icon{
+    width: 2rem;
+    margin-right:10px;
+}
+
+.title {
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 1rem;
+  transition: border-bottom 0.3s ease; 
+  border-bottom: 2px solid transparent; 
+}
+
+.link:hover {
+  border-bottom: 2px solid #007bff; 
+}
+
+.link.activeLink {
+  border-bottom: 2px solid #28a745; 
+}
