@@ -1,0 +1,124 @@
+.containerHome {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../assets/herobg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.content {
+  display: flex;
+}
+
+.contentString {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.title {
+  white-space: nowrap;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #fff;
+  z-index: 2;
+} 
+
+.gif {
+  display: flex;
+  align-items: center;
+  width: 27rem;
+  margin: 9rem 0 0 10rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 1rem;
+}
+
+.github {
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem 1rem 0 0;
+}
+
+.linkedin{
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 1rem 1rem 0 0;
+}
+
+.whatsapp{
+  width: 2.3rem;
+  height: 2.3rem;
+  margin: 1rem 1rem 0 0;
+}
+
+.contentForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+

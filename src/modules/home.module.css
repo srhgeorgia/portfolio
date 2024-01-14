@@ -5,16 +5,14 @@
   background-image: url("../assets/herobg.png");
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  background-repeat: repeat;
+  height: 100vh;
   margin-top: 5rem;
-  /* opacity: 0.5;  */
-  /* z-index: -1;  */
 }
 
 .content {
   display: flex;
   max-width: 100%;
-  margin-top: 10rem;
 }
 
 .contentString {
@@ -23,9 +21,7 @@
   align-items: flex-start;
   justify-content: center;
   margin-left: 10rem;
-  margin-bottom: 20rem;
-  /* z-index: 2; 
-    position: relative; */
+  margin-bottom: 12rem;
 }
 
 .title {
@@ -54,7 +50,6 @@
   font-size: 2rem;
   font-weight: 500;
   color: #fff;
-  margin-top: 1rem;
 }
 
 .subSubTitle{
@@ -63,10 +58,10 @@
 }
 
 .gif {
-  width: 80rem;
-  /* margin-right: 20rem; */
+  width: 82rem;
   z-index: 1;
   margin-bottom: 8rem;
+  margin-right: 2rem;
 }
 
 @keyframes gradientAnimation {

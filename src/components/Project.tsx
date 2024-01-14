@@ -40,7 +40,7 @@ const Project: React.FC = () => {
           <h1 className={styles.title}>Summary</h1>
           <p className={styles.subTitle}>
             In developing this portfolio, I will employ React with TypeScript as
-            the foundation. Utilizing CSS modules, Tailwind CSS, Framer Motion,
+            the foundation. Utilizing CSS modules, Tailwind CSS, EmailJS, Framer Motion,
             Lottie React, React Router DOM, and GIT for code versioning, I will
             ensure a seamless development process. The deployment will be
             carried out on Vercel, emphasizing clean code practices and
