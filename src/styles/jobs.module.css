@@ -1,0 +1,65 @@
+/* about.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  padding: 0 4rem;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  --tw-bg-opacity: 1;
+  background-color: rgb(5, 8, 22, var(--tw-bg-opacity));
+  max-width: 80vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+.content {
+  margin-bottom: 4rem;
+}
+
+.aboutMe {
+  --tw-text-opacity: 1;
+  color: rgb(170 166 195 / var(--tw-text-opacity));
+}
+
+.title {
+  white-space: nowrap;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.subTitle {
+  --tw-text-opacity: 1;
+  color: rgb(170 166 195 / var(--tw-text-opacity));
+}
+
+.subSubTitle {
+  margin: 20px 0;
+}
+
+.contentTech {
+  margin-top: 3rem;
+}
+
+.techs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tech {
+  margin-right: 2rem;
+}
+
+.frontEnd {
+  display: flex;
+}
+
+.backEnd {
+  margin-top: 1rem;
+  display: flex;
+}

@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import styles from "../modules/navs.module.css";
+import styles from "../styles/navs.module.css";
 import { motion } from "framer-motion";
 
 function Navs() {

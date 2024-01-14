@@ -16,7 +16,7 @@ const TechIcon: React.FC<TechIconProps> = ({ src, alt }) => {
   );
 };
 
-const About: React.FC = () => {
+const Jobs: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const controls = useAnimation();
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -102,4 +102,4 @@ const About: React.FC = () => {
   );
 };
 
-export default About;
+export default Jobs;

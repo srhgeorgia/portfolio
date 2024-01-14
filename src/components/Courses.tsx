@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import styles from "../styles/project.module.css";
 
-const Project: React.FC = () => {
+const Courses: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const controls = useAnimation();
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -53,4 +53,4 @@ const Project: React.FC = () => {
   );
 };
 
-export default Project;
+export default Courses;

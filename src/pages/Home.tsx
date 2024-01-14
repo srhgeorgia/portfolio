@@ -1,4 +1,4 @@
-import styles from "../modules/home.module.css";
+import styles from "../styles/home.module.css";
 import Lottie from "lottie-react";
 import notebook from "../assets/notebook.json";
 import About from "../components/About";
@@ -15,11 +15,11 @@ function Home() {
             </h1>
             <h3 className={styles.subTitle}>
               Welcome to my portfolio!
+            </h3>
               <h4 className={styles.subSubTitle}>
                 I am a front-end developer with nearly two years of experience,
                 and I'm enthusiastic about diving into back-end development.
               </h4>
-            </h3>
           </div>
 
           <div className={styles.gif}>
