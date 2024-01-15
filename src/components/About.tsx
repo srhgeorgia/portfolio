@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import styles from "../styles/about.module.css";
+import java from "../assets/java.png";
 
 interface TechIconProps {
   src: string;
@@ -85,7 +86,7 @@ const About: React.FC = () => {
 
             <div className={styles.backEnd}>
               <TechIcon src="/src/assets/python.png" alt="" />
-              <TechIcon src="/src/assets/java.png" alt="" />
+              <TechIcon src={java} alt="" />
               <TechIcon src="/src/assets/sql.png" alt="" />
               <TechIcon src="/src/assets/node.png" alt="" />
               <TechIcon src="/src/assets/docker.png" alt="" />
