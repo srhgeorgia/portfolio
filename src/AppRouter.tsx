@@ -1,7 +1,7 @@
 import { useRoutes } from "react-router-dom";
 import Home from "./pages/Home";
 import Works from "./pages/Works";
-import Contact from "./components/Contact";
+import Contact from "./pages/Contact";
 
 function AppRouter() {
   const routes = useRoutes([

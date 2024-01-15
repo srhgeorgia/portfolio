@@ -2,17 +2,16 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import styles from "../styles/about.module.css";
-import java from "../assets/java.png";
-
+import { ImageKeys, images } from "../utils/imageMapping";
 interface TechIconProps {
-  src: string;
+  name: ImageKeys;
   alt: string;
 }
 
-const TechIcon: React.FC<TechIconProps> = ({ src, alt }) => {
+const TechIcon: React.FC<TechIconProps> = ({ name, alt }) => {
   return (
     <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-      <img src={src} alt={alt} className={styles.tech} />
+      <img src={images[name]} alt={alt} className={styles.tech} />
     </motion.div>
   );
 };
@@ -73,28 +72,28 @@ const About: React.FC = () => {
         <motion.div className={styles.contentTech} animate={controls}>
           <div className={styles.techs}>
             <div className={styles.frontEnd}>
-              <TechIcon src="/src/assets/html.png" alt="" />
-              <TechIcon src="/src/assets/css.png" alt="" />
-              <TechIcon src="/src/assets/javascript.png" alt="" />
-              <TechIcon src="/src/assets/typescript.png" alt="" />
-              <TechIcon src="/src/assets/react.png" alt="" />
-              <TechIcon src="/src/assets/angular.png" alt="" />
-              <TechIcon src="/src/assets/vue.png" alt="" />
-              <TechIcon src="/src/assets/api.png" alt="" />
-              <TechIcon src="/src/assets/git.png" alt="" />
+              <TechIcon name="html" alt="html" />
+              <TechIcon name="css" alt="css" />
+              <TechIcon name="javascript" alt="javascript" />
+              <TechIcon name="typescript" alt="typescript" />
+              <TechIcon name="react" alt="react" />
+              <TechIcon name="angular" alt="angular" />
+              <TechIcon name="vue" alt="vue" />
+              <TechIcon name="api" alt="api" />
+              <TechIcon name="git" alt="git" />
             </div>
 
             <div className={styles.backEnd}>
-              <TechIcon src="/src/assets/python.png" alt="" />
-              <TechIcon src={java} alt="" />
-              <TechIcon src="/src/assets/sql.png" alt="" />
-              <TechIcon src="/src/assets/node.png" alt="" />
-              <TechIcon src="/src/assets/docker.png" alt="" />
-              <TechIcon src="/src/assets/aws.png" alt="" />
+              <TechIcon name="python" alt="python" />
+              <TechIcon name="java" alt="java" />
+              <TechIcon name="sql" alt="sql" />
+              <TechIcon name="node" alt="node" />
+              <TechIcon name="docker" alt="docker" />
+              <TechIcon name="aws" alt="aws" />
 
-              <TechIcon src="/src/assets/bootstrap.png" alt="" />
-              <TechIcon src="/src/assets/taiwilnd.png" alt="" />
-              <TechIcon src="/src/assets/materialui.png" alt="" />
+              <TechIcon name="bootstrap" alt="bootstrap" />
+              <TechIcon name="taiwilnd" alt="taiwilnd" />
+              <TechIcon name="materialui" alt="materialui" />
             </div>
           </div>
         </motion.div>

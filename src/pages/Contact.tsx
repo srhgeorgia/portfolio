@@ -4,6 +4,7 @@ import emailjs from "emailjs-com";
 import styles from "../styles/contact.module.css";
 import contact from "../utils/contact.json";
 import { motion } from "framer-motion";
+import { images } from "../utils/imageMapping";
 
 interface FormState {
   name: string;
@@ -142,7 +143,7 @@ const Contact: React.FC = () => {
                   whileTap={{ scale: 0.9 }}
                 >
                   <img
-                    src="/src/assets/github.png"
+                    src={images.github}
                     alt="github"
                     className={styles.github}
                   />
@@ -154,7 +155,7 @@ const Contact: React.FC = () => {
                   whileTap={{ scale: 0.9 }}
                 >
                   <img
-                    src="/src/assets/linkedin.png"
+                    src={images.linkedin}
                     alt="linkedin"
                     className={styles.linkedin}
                   />
@@ -166,7 +167,7 @@ const Contact: React.FC = () => {
                   whileTap={{ scale: 0.9 }}
                 >
                   <img
-                    src="/src/assets/whatsapp.png"
+                    src={images.whatsapp}
                     alt="whatsapp"
                     className={styles.whatsapp}
                   />

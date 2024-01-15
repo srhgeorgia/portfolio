@@ -3,6 +3,7 @@ import styles from "../styles/works.module.css";
 import Jobs from "../components/Jobs";
 import Courses from "../components/Courses";
 import { motion } from "framer-motion";
+import { images } from "../utils/imageMapping";
 
 const projects = [
   {
@@ -10,7 +11,7 @@ const projects = [
     title: "Jornada do Herói",
     description:
       "Desenvolvimento de um jogo simples em React para determinar o campeão mais forte, utilizando uma API externa de super-heróis.",
-    image: "/src/assets/works/jornadaheroi.jpeg",
+    image: images.jornada,
     repoUrl: "https://github.com/srhgeorgia/jornadaDoHeroi",
     deployedUrl: "https://jornada-do-heroi-7c48.vercel.app/",
   },
@@ -19,7 +20,7 @@ const projects = [
     title: "Projeto BuzzFeed",
     description:
       "Recriação do site BuzzFeed utilizando Angular, implementado com uma API fictícia para simulação de dados.",
-    image: "/src/assets/works/buzzfeed.jpeg",
+    image: images.buzz,
     repoUrl: "https://github.com/srhgeorgia/angular-buzzfeed",
     deployedUrl: "https://app.netlify.com/sites/angularswiftie/overview",
   },
@@ -27,7 +28,7 @@ const projects = [
     id: 3,
     title: "Boostrap",
     description: "Desenvolvimento de um projeto utilizando Bootstrap.",
-    image: "/src/assets/works/bootstrap.jpeg",
+    image: images.bootstrapProject,
     repoUrl: "https://github.com/srhgeorgia/projeto-bootstrap",
     deployedUrl: "https://caravan-eight.vercel.app/",
   },
@@ -35,7 +36,7 @@ const projects = [
     id: 4,
     title: "Projeto final React Origamid",
     description: "Projeto final do curso de React da Origamid.",
-    image: "/src/assets/works/react.jpeg",
+    image: images.reactProject,
     repoUrl: "https://github.com/srhgeorgia/projetoFinalReactOrigamid",
     deployedUrl: "https://projetofinalreactorigamid.netlify.app/",
   },
@@ -182,7 +183,7 @@ function Works() {
               className={styles.modalImage}
               alt=""
             />
-            <p className={styles.subTitle}>
+            <p className={styles.subTitleModal}>
               {projects[currentImageIndex].description}
             </p>
 

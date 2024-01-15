@@ -6,6 +6,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { images } from "../utils/imageMapping";
 
 const Jobs: React.FC = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -70,7 +71,7 @@ const Jobs: React.FC = () => {
             date="2022-2024"
             icon={
               <img
-                src="https://assets-global.website-files.com/6491a8aad31f132488172555/64998fedf721c1b76821baf2_glob-logo-indicium.svg"
+                src={images.indicium}
                 className={styles.imgIndicium}
               />
             }
@@ -120,7 +121,7 @@ const Jobs: React.FC = () => {
             date="2022-2022"
             icon={
               <img
-                src="/src/assets/works/kenzie.png"
+                src={images.kenzie}
                 className={styles.imgKenzie}
               />
             }
