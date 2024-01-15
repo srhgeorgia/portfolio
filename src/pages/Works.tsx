@@ -190,6 +190,7 @@ function Works() {
             <div className={styles.linksModal}>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }}>
                 <a
+                  className={styles.aModal}
                   href={projects[currentImageIndex].repoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -199,6 +200,7 @@ function Works() {
               </motion.div>
               <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }}>
                 <a
+                  className={styles.aModal}
                   href={projects[currentImageIndex].deployedUrl}
                   target="_blank"
                   rel="noopener noreferrer"
