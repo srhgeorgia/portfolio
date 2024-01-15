@@ -120,7 +120,7 @@ function Works() {
               whileTap={{ scale: 1 }}
               className={styles.buttonLeft}
             >
-              <img src="/src/assets/left.png" alt="" />
+              <img src={images.left} alt="" />
             </motion.div>
 
             <div className={styles.carousel}>
@@ -163,7 +163,7 @@ function Works() {
               whileTap={{ scale: 1 }}
               className={styles.buttonRight}
             >
-              <img src="/src/assets/right.png" alt="" />
+              <img src={images.right} alt="" />
             </motion.div>
           </motion.div>
         </div>

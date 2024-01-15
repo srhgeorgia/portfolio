@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "../styles/navs.module.css";
 import { motion } from "framer-motion";
+import { images } from "../utils/imageMapping";
 
 interface NavsProps {
   onClick: () => void;
@@ -17,7 +18,7 @@ const Navs: React.FC<NavsProps> = ({ onClick }) => {
       <div className={styles.content}>
         <div className={styles.title}>
           <img
-            src="/src/assets/icon.jpg"
+            src={images.icon}
             alt="icone"
             className={styles.icon}
           />
