@@ -1,15 +1,28 @@
+import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "../styles/navs.module.css";
 import { motion } from "framer-motion";
 
-function Navs() {
+interface NavsProps {
+  onClick: () => void;
+}
+
+const Navs: React.FC<NavsProps> = ({ onClick }) => {
+  const handleLinkClick = () => {
+    onClick();
+  };
+
   return (
     <div className={styles.containerNavs}>
       <div className={styles.content}>
-      <div className={styles.title}>
-        <img src="/src/assets/icon.jpg" alt="icone" className={styles.icon} />
-        <h2>Sarah | Full Stack Developer</h2>
-      </div>
+        <div className={styles.title}>
+          <img
+            src="/src/assets/icon.jpg"
+            alt="icone"
+            className={styles.icon}
+          />
+          <h2>Sarah | Full Stack Developer</h2>
+        </div>
 
         <div className={styles.links}>
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }}>
@@ -18,6 +31,7 @@ function Navs() {
               className={({ isActive }) =>
                 isActive ? `${styles.link} ${styles.activeLink}` : styles.link
               }
+              onClick={handleLinkClick} 
             >
               Home
             </NavLink>
@@ -29,16 +43,19 @@ function Navs() {
               className={({ isActive }) =>
                 isActive ? `${styles.link} ${styles.activeLink}` : styles.link
               }
+              onClick={handleLinkClick}
             >
               Works
             </NavLink>
           </motion.div>
+
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }}>
             <NavLink
               to="/contact"
               className={({ isActive }) =>
                 isActive ? `${styles.link} ${styles.activeLink}` : styles.link
               }
+              onClick={handleLinkClick}  
             >
               Contact
             </NavLink>
@@ -47,6 +64,6 @@ function Navs() {
       </div>
     </div>
   );
-}
+};
 
 export default Navs;

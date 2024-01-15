@@ -1,6 +1,6 @@
 /* about.module.css */
 .container {
-  height: 60vh;
+  height: 75vh;
   padding: 4rem 4rem;
   transform: translateY(50px);
   transition: opacity 0.5s ease, transform 0.5s ease;
@@ -27,4 +27,10 @@
 .subTitle {
   --tw-text-opacity: 1;
   color: rgb(170 166 195 / var(--tw-text-opacity));
+}
+
+.subSubTitle {
+  margin: 20px 0;
+  --tw-text-opacity: 1;
+  color: rgb(170 166 195 / var(--tw-text-opacity)); 
 }

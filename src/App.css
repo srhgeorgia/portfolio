@@ -13,6 +13,13 @@
   color-scheme: dark;
 }
 
+h1{
+  font-size: 4.2rem !important;
+}
+
+p{
+  font-size: 14px !important;
+}
 
 body{
   --tw-bg-opacity: 1;

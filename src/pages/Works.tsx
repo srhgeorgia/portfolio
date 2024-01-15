@@ -1,47 +1,50 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "../styles/works.module.css";
 import Jobs from "../components/Jobs";
 import Courses from "../components/Courses";
+import { motion } from "framer-motion";
 
 const projects = [
   {
     id: 1,
     title: "Jornada do Herói",
     description:
-      "Um jogo simples feito em react para ver qual campeão mais forte, API ex",
+      "Desenvolvimento de um jogo simples em React para determinar o campeão mais forte, utilizando uma API externa de super-heróis.",
     image: "/src/assets/works/jornadaheroi.jpeg",
     repoUrl: "https://github.com/srhgeorgia/jornadaDoHeroi",
-    deployedUrl: "https://jornadadoheroi.netlify.app/",
+    deployedUrl: "https://jornada-do-heroi-7c48.vercel.app/",
   },
   {
     id: 2,
     title: "Projeto BuzzFeed",
-    description: "'Clone' do site BuzzFeed feito em Angular, com fake API.",
+    description:
+      "Recriação do site BuzzFeed utilizando Angular, implementado com uma API fictícia para simulação de dados.",
     image: "/src/assets/works/buzzfeed.jpeg",
     repoUrl: "https://github.com/srhgeorgia/angular-buzzfeed",
-    deployedUrl: "https://angular-buzzfeed.netlify.app/",
+    deployedUrl: "https://app.netlify.com/sites/angularswiftie/overview",
   },
   {
     id: 3,
     title: "Boostrap",
-    description: "Projeto feito em Bootstrap.",
+    description: "Desenvolvimento de um projeto utilizando Bootstrap.",
     image: "/src/assets/works/bootstrap.jpeg",
     repoUrl: "https://github.com/srhgeorgia/projeto-bootstrap",
-    deployedUrl: "https://projeto-bootstrap.netlify.app/",
+    deployedUrl: "https://caravan-eight.vercel.app/",
   },
   {
     id: 4,
     title: "Projeto final React Origamid",
-    description: "Descrição do Projeto 2",
+    description: "Projeto final do curso de React da Origamid.",
     image: "/src/assets/works/react.jpeg",
     repoUrl: "https://github.com/srhgeorgia/projetoFinalReactOrigamid",
-    deployedUrl: "https://projeto-final-react-origamid.netlify.app/",
+    deployedUrl: "https://projetofinalreactorigamid.netlify.app/",
   },
 ];
 
 function Works() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [modalOpen, setModalOpen] = useState(false);
+  const intervalIdRef = useRef<NodeJS.Timeout>();
 
   const handlePrevious = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -55,6 +58,20 @@ function Works() {
     );
   };
 
+  useEffect(() => {
+    if (!modalOpen) {
+      intervalIdRef.current = setInterval(() => {
+        handleNext();
+      }, 2000);
+    }
+
+    return () => {
+      if (intervalIdRef.current) {
+        clearInterval(intervalIdRef.current);
+      }
+    };
+  }, [currentImageIndex, modalOpen]);
+
   const handleImageClick = () => {
     setModalOpen(true);
   };
@@ -63,21 +80,49 @@ function Works() {
     setModalOpen(false);
   };
 
+  const imgVariante = {
+    initial: { x: "-100%" },
+    animate: { x: 0 },
+  };
+
+  const transition = { duration: 0.9, type: "spring" };
+
   return (
     <div>
       <div className={styles.containerWorks}>
         <div className={styles.content}>
           <div className={styles.contentString}>
-            <h3 className={styles.subTitle}>ola</h3>
+            <h3 className={styles.subTitle}>SOME WORKS</h3>
             <h1 className={styles.title}>My Projects</h1>
             <h4 className={styles.subTitle}>
-              I am a front-end developer with nearly two years of experience,
-              and I'm enthusiastic about diving into back-end development.
+              I showcase a selection of my personal projects, meticulously
+              crafted to delve into various frameworks and styling techniques.
+              Each project comes with its Git versioning history, takes center
+              stage through deployments on Vercel or Netlify, and has its own
+              dedicated GitHub page for a seamless and transparent overview of
+              my development journey.
             </h4>
           </div>
 
-          <div className={styles.carousel}>
-              <button onClick={handlePrevious}>Anterior</button>
+          <motion.div
+            transition={transition}
+            variants={imgVariante}
+            initial="initial"
+            animate="animate"
+            className={styles.contentCarousel}
+          >
+            <motion.div
+              onClick={handlePrevious}
+              transition={transition}
+              variants={imgVariante}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 1 }}
+              className={styles.buttonLeft}
+            >
+              <img src="/src/assets/left.png" alt="" />
+            </motion.div>
+
+            <div className={styles.carousel}>
               <img
                 src={
                   projects[
@@ -89,19 +134,37 @@ function Works() {
                 alt="Previous"
                 className={styles.carouselImage}
               />
-              <img
-                src={projects[currentImageIndex].image}
-                alt={projects[currentImageIndex].title}
-                onClick={handleImageClick}
-                className={styles.carouselMainImage}
-              />
+              <motion.div
+                transition={transition}
+                variants={imgVariante}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 1 }}
+              >
+                <img
+                  src={projects[currentImageIndex].image}
+                  alt={projects[currentImageIndex].title}
+                  onClick={handleImageClick}
+                  className={styles.carouselMainImage}
+                />
+              </motion.div>
               <img
                 src={projects[(currentImageIndex + 1) % projects.length].image}
                 alt="Next"
                 className={styles.carouselImage}
               />
-              <button onClick={handleNext}>Próxima</button>
-          </div>
+            </div>
+
+            <motion.div
+              onClick={handleNext}
+              transition={transition}
+              variants={imgVariante}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 1 }}
+              className={styles.buttonRight}
+            >
+              <img src="/src/assets/right.png" alt="" />
+            </motion.div>
+          </motion.div>
         </div>
       </div>
 
@@ -111,27 +174,44 @@ function Works() {
             className={styles.modalContent}
             onClick={(e) => e.stopPropagation()}
           >
-            <h2>{projects[currentImageIndex].title}</h2>
-            <p>{projects[currentImageIndex].description}</p>
-            <a
-              href={projects[currentImageIndex].repoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Repository
-            </a>
-            <a
-              href={projects[currentImageIndex].deployedUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Deploy
-            </a>
+            <h2 className={styles.title}>
+              {projects[currentImageIndex].title}
+            </h2>
+            <img
+              src={projects[currentImageIndex].image}
+              className={styles.modalImage}
+              alt=""
+            />
+            <p className={styles.subTitle}>
+              {projects[currentImageIndex].description}
+            </p>
+
+            <div className={styles.linksModal}>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }}>
+                <a
+                  href={projects[currentImageIndex].repoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Repository
+                </a>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1 }}>
+                <a
+                  href={projects[currentImageIndex].deployedUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Deploy
+                </a>
+              </motion.div>
+            </div>
+
             <button onClick={handleCloseModal}>Close</button>
           </div>
         </div>
       )}
-
+      <div className={styles.divVazia}></div>
       <Jobs />
       <Courses />
     </div>
