@@ -13,7 +13,7 @@ const projects = [
       "Development of a simple game in React to determine the strongest champion, using an external superhero API.",
     image: images.jornada,
     repoUrl: "https://github.com/srhgeorgia/jornadaDoHeroi",
-    deployedUrl: "https://jornada-do-heroi-7c48.vercel.app/",
+    deployedUrl: "https://thebattleheroes.vercel.app/",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const projects = [
       "Recreation of the BuzzFeed website using Angular, implemented with a fictitious API for data simulation.",
     image: images.buzz,
     repoUrl: "https://github.com/srhgeorgia/angular-buzzfeed",
-    deployedUrl: "https://app.netlify.com/sites/angularswiftie/overview",
+    deployedUrl: "https://angularswiftie.netlify.app/",
   },
   {
     id: 3,
