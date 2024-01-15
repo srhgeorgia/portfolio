@@ -2,7 +2,7 @@ import React, { useRef, useState, ChangeEvent } from "react";
 import Lottie from "lottie-react";
 import emailjs from "emailjs-com";
 import styles from "../styles/contact.module.css";
-import contact from "../assets/contact.json";
+import contact from "../utils/contact.json";
 import { motion } from "framer-motion";
 
 interface FormState {
@@ -167,7 +167,7 @@ const Contact: React.FC = () => {
                 >
                   <img
                     src="/src/assets/whatsapp.png"
-                    alt="linkedin"
+                    alt="whatsapp"
                     className={styles.whatsapp}
                   />
                 </motion.a>

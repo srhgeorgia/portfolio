@@ -1,6 +1,6 @@
 import styles from "../styles/home.module.css";
 import Lottie from "lottie-react";
-import notebook from "../assets/notebook.json";
+import notebook from "../utils/notebook.json";
 import About from "../components/About";
 import Project from "../components/Project";
 

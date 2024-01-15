@@ -72,28 +72,28 @@ const About: React.FC = () => {
         <motion.div className={styles.contentTech} animate={controls}>
           <div className={styles.techs}>
             <div className={styles.frontEnd}>
-              <TechIcon src="/src/assets/techs/html.png" alt="" />
-              <TechIcon src="/src/assets/techs/css.png" alt="" />
-              <TechIcon src="/src/assets/techs/javascript.png" alt="" />
-              <TechIcon src="/src/assets/techs/typescript.png" alt="" />
-              <TechIcon src="/src/assets/techs/react.png" alt="" />
-              <TechIcon src="/src/assets/techs/angular.png" alt="" />
-              <TechIcon src="/src/assets/techs/vue.png" alt="" />
-              <TechIcon src="/src/assets/techs/api.png" alt="" />
-              <TechIcon src="/src/assets/techs/git.png" alt="" />
+              <TechIcon src="/src/assets/html.png" alt="" />
+              <TechIcon src="/src/assets/css.png" alt="" />
+              <TechIcon src="/src/assets/javascript.png" alt="" />
+              <TechIcon src="/src/assets/typescript.png" alt="" />
+              <TechIcon src="/src/assets/react.png" alt="" />
+              <TechIcon src="/src/assets/angular.png" alt="" />
+              <TechIcon src="/src/assets/vue.png" alt="" />
+              <TechIcon src="/src/assets/api.png" alt="" />
+              <TechIcon src="/src/assets/git.png" alt="" />
             </div>
 
             <div className={styles.backEnd}>
-              <TechIcon src="/src/assets/techs/python.png" alt="" />
-              <TechIcon src="/src/assets/techs/java.png" alt="" />
-              <TechIcon src="/src/assets/techs/sql.png" alt="" />
-              <TechIcon src="/src/assets/techs/node.png" alt="" />
-              <TechIcon src="/src/assets/techs/docker.png" alt="" />
-              <TechIcon src="/src/assets/techs/aws.png" alt="" />
+              <TechIcon src="/src/assets/python.png" alt="" />
+              <TechIcon src="/src/assets/java.png" alt="" />
+              <TechIcon src="/src/assets/sql.png" alt="" />
+              <TechIcon src="/src/assets/node.png" alt="" />
+              <TechIcon src="/src/assets/docker.png" alt="" />
+              <TechIcon src="/src/assets/aws.png" alt="" />
 
-              <TechIcon src="/src/assets/techs/bootstrap.png" alt="" />
-              <TechIcon src="/src/assets/techs/taiwilnd.png" alt="" />
-              <TechIcon src="/src/assets/techs/materialui.png" alt="" />
+              <TechIcon src="/src/assets/bootstrap.png" alt="" />
+              <TechIcon src="/src/assets/taiwilnd.png" alt="" />
+              <TechIcon src="/src/assets/materialui.png" alt="" />
             </div>
           </div>
         </motion.div>
