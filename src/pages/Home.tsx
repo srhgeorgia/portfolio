@@ -14,7 +14,7 @@ function Home() {
               Hi, I'm <span>Sarah!</span>
             </h1>
             <h3 className={styles.subTitle}>
-              Welcome to my portfolio!
+              Welcome to my portfólio!
             </h3>
               <h4 className={styles.subSubTitle}>
                 I am a front-end developer with nearly two years of experience,
