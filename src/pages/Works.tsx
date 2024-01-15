@@ -10,7 +10,7 @@ const projects = [
     id: 1,
     title: "Jornada do Herói",
     description:
-      "Desenvolvimento de um jogo simples em React para determinar o campeão mais forte, utilizando uma API externa de super-heróis.",
+      "Development of a simple game in React to determine the strongest champion, using an external superhero API.",
     image: images.jornada,
     repoUrl: "https://github.com/srhgeorgia/jornadaDoHeroi",
     deployedUrl: "https://jornada-do-heroi-7c48.vercel.app/",
@@ -19,7 +19,7 @@ const projects = [
     id: 2,
     title: "Projeto BuzzFeed",
     description:
-      "Recriação do site BuzzFeed utilizando Angular, implementado com uma API fictícia para simulação de dados.",
+      "Recreation of the BuzzFeed website using Angular, implemented with a fictitious API for data simulation.",
     image: images.buzz,
     repoUrl: "https://github.com/srhgeorgia/angular-buzzfeed",
     deployedUrl: "https://app.netlify.com/sites/angularswiftie/overview",
@@ -27,7 +27,7 @@ const projects = [
   {
     id: 3,
     title: "Boostrap",
-    description: "Desenvolvimento de um projeto utilizando Bootstrap.",
+    description: "Development of a project using Bootstrap.",
     image: images.bootstrapProject,
     repoUrl: "https://github.com/srhgeorgia/projeto-bootstrap",
     deployedUrl: "https://caravan-eight.vercel.app/",
@@ -35,7 +35,7 @@ const projects = [
   {
     id: 4,
     title: "Projeto final React Origamid",
-    description: "Projeto final do curso de React da Origamid.",
+    description: "Final project for Origamid's React course.",
     image: images.reactProject,
     repoUrl: "https://github.com/srhgeorgia/projetoFinalReactOrigamid",
     deployedUrl: "https://projetofinalreactorigamid.netlify.app/",
