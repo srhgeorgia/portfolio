@@ -145,12 +145,12 @@ body.modalOpen {
   margin-bottom: 2rem;
 }
 
-a {
+.aModal {
   cursor: pointer;
   margin: 0 2rem 2rem 0;
 }
 
-a:hover {
+.aModal:hover {
   border-bottom: 2px solid #007bff;
 }
 
