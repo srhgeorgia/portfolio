@@ -52,19 +52,25 @@ const About: React.FC = () => {
           <h3 className={styles.aboutMe}>ABOUT ME</h3>
           <h1 className={styles.title}>Overview</h1>
           <p className={styles.subTitle}>
-            I am currently immersed in the React framework, leveraging a tech
-            stack that includes Typescript, JavaScript, HTML, CSS, Styled
-            Components, Material UI, Tailwind, CSS Modules, Sass, Node, API
-            integration, AWS, Docker, and code management on GitHub and
-            Bitbucket.
+            I have a solid experience as a front-end developer, working with
+            technologies such as React, Angular, TypeScript, JavaScript, Styled
+            Components, HTML, CSS, Vue, Redux, among others. My responsibilities
+            include creating dynamic and responsive user interfaces,
+            implementing robust business logic, and integrating systems through
+            APIs. Additionally, I have experience working with tools like
+            Postman for API testing and using Java and SQL, which I acquired
+            during my studies at Senac, where I specialized in Back End
+            proficiency.
             <p className={styles.subSubTitle}>
-              My workflow embraces Agile methodologies like Scrum and Kanban,
-              with code versioning handled through GIT. In addition to my
-              proficiency in React, I actively explore other frameworks such as
-              Angular and Vue. My commitment to being a versatile developer
-              extends to a Full Stack proficiency, where I bring knowledge of
-              Java, Spring Boot, SQL, and an ongoing study of Python. My
-              expertise also spans UI and UX design.
+              Recently, I transitioned to the field of data engineering, where I
+              utilize tools in projects involving SQL, Python, ETL (Extract,
+              Transform, Load), AWS (Amazon Web Services), Docker, Airflow, and
+              Snowflake. This includes handling and analyzing large datasets,
+              building efficient data pipelines like TAPs with Meltano and DAGs,
+              and implementing cloud storage and analysis solutions. I'm also
+              familiar with Agile methodologies such as Scrum and Kanban, and I
+              have experience in code versioning using GIT. Additionally, I
+              primarily use WSL Ubuntu as my main prompt.
             </p>
           </p>
         </motion.div>

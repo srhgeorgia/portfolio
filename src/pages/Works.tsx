@@ -103,6 +103,10 @@ function Works() {
               dedicated GitHub page for a seamless and transparent overview of
               my development journey.
             </h4>
+            <h4 className={styles.subTitleEngineer}>
+              Data engineering work is for the company's personal use and cannot
+              be shown here.{" "}
+            </h4>
           </div>
 
           <motion.div

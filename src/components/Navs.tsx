@@ -22,7 +22,7 @@ const Navs: React.FC<NavsProps> = ({ onClick }) => {
             alt="icone"
             className={styles.icon}
           />
-          <h2>Sarah | Full Stack Developer</h2>
+          <h2>Sarah | Data Engineer & Software Developer</h2>
         </div>
 
         <div className={styles.links}>

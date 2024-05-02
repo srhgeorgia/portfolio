@@ -43,6 +43,17 @@
   justify-content: center;
 }
 
+.subTitleEngineer{
+  --tw-text-opacity: 1;
+  color: rgb(170 166 195 / var(--tw-text-opacity));
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  margin-left: 18%;
+}
+
 .subTitleModal{
   --tw-text-opacity: 1;
   color: rgb(170 166 195 / var(--tw-text-opacity));

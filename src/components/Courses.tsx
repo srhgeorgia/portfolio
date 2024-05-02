@@ -39,27 +39,37 @@ const Courses: React.FC = () => {
           <h3 className={styles.aboutMe}>ADDITIONAL INFORMATION</h3>
           <h1 className={styles.title}>Estudies</h1>
           <p className={styles.subTitle}>
-            I am currently focused on honing my skills as a Back End developer
-            through a course at Senac, scheduled for completion from October
-            2023 to March 2024. Previously, I embarked on my tech journey with a
-            Front End Development course at Kenzie Academy Brasil, completed
-            from January to July 2022. While my enrollment in the Analysis and
-            Systems Development program at Estácio, initiated in February 2023,
-            is temporarily on hold, I remain committed to my professional
-            growth.
+            I entered the world of technology many years ago when I enrolled in
+            a Computer Network Formation course at college. However, due to lack
+            of resources, I was unable to continue and complete my studies at
+            that time. During the pandemic, I found a new opportunity when I
+            joined the Front End Development course at Kenzie Academy Brasil,
+            where I discovered the fascinating world of software and fell in
+            love with it.
           </p>
           <p className={styles.subSubTitle}>
-            Additionally, I highlight my proficiency in English, boasting
-            advanced skills in conversation, reading, and writing. This
-            linguistic strength positions me advantageously in our globalized
-            world. I also possess basic knowledge of Spanish, fostering broader
-            and more inclusive communication.
+            Currently, I am immersed in data studies after graduating in Back
+            End Development at Senac. This experience allowed me to delve into
+            the realms of Java, Python, and SQL, expanding my horizons beyond
+            the tools I already mastered, such as JavaScript, React, and
+            TypeScript. Although my enrollment in the Analysis and Systems
+            Development course at Estácio is temporarily on hold, I remain
+            committed to my professional growth.
           </p>
           <p className={styles.subSubTitle}>
-            These combined experiences underscore my unwavering commitment to
-            learning and development, always seeking to enhance my technical and
-            linguistic skills to make a meaningful contribution in the
-            professional landscape.
+            Additionally, I highlight my proficiency in English, with advanced
+            skills in conversation, reading, and writing, which positions me
+            advantageously in our globalized world. I also study Spanish and
+            French, aiming to further enhance my proficiency in these languages.
+          </p>
+          <p className={styles.subSubTitle}>
+            These combined experiences, along with my previous professional
+            background in sales, where I worked for many years, underscore my
+            unwavering commitment to continuous learning and development. I
+            always strive to improve my technical and linguistic skills to make
+            a significant contribution in the professional landscape,
+            maintaining excellent communication with my team and the people
+            around me.
           </p>
         </motion.div>
       </div>

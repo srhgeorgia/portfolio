@@ -13,13 +13,13 @@ function Home() {
             <h1 className={styles.title}>
               Hi, I'm <span>Sarah!</span>
             </h1>
-            <h3 className={styles.subTitle}>
-              Welcome to my portfólio!
-            </h3>
-              <h4 className={styles.subSubTitle}>
-                I am a front-end developer with nearly two years of experience,
-                and I'm enthusiastic about diving into back-end development.
-              </h4>
+            <h3 className={styles.subTitle}>Welcome to my portfólio!</h3>
+            <h4 className={styles.subSubTitle}>
+              I am a front-end developer and Data Engineer passionate about technology.
+              With almost 2 years of experience in software development, in addition to vast knowledge in back-end studies, 
+              I seek to become full stack and focus on data-driven solutions. Open
+              to challenging opportunities and innovative collaborations!
+            </h4>
           </div>
 
           <div className={styles.gif}>
